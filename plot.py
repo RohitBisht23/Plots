@@ -20,7 +20,7 @@ st.altair_chart(chart)
 st.header('2. Interactive charts')
 
 st.subheader('2.1: Line chart')
-df = pd.read_csv('C:\\Users\\ROHIT\\Downloads\\lang_data.csv')
+df = pd.read_csv('lang_data.csv')
 lang_list = df.columns.tolist()
 lang_choices = st.multiselect('Choose your language',lang_list)
 new_df = df[lang_choices]
@@ -34,7 +34,7 @@ st.area_chart(new_df)
 # import plotly.express as pe
 # import plotly.figure_factory as ff
 st.subheader('3.1 Displaying the dataset ')
-df = pd.read_csv('C:\\Users\\ROHIT\\Downloads\\tips.csv')
+df = pd.read_csv('tips.csv')
 st.dataframe(df.head())
 
 st.subheader('3.2 Pie Chart')
